@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: hsla(113, 96%, 49%, 0.953); /* Tomato color */
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Change text color on hover */
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+section h2 {
+    color: hsl(114, 99%, 51%); /* Tomato color */
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+}
+
+section h2:hover {
+    color: #ff6347; /* Change text color on hover */
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ffcc00;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    animation: grow 1s ease-in-out;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.75rem;
+    color: #555;
+    font-weight: 500;
+}
+
+blockquote {
+    border-left: 4px solid #ff6347; /* Tomato color */
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: #555;
+}
+
+.team-member {
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+    text-align: center;
+    transition: box-shadow 0.3s; /* Smooth transition for box shadow */
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.team-member h3 {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.team-member p {
+    margin: 0;
+    color: #777;
+}
+
+.team-member:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+}
+
+.faq-item {
+    margin: 1.5rem 0;
+    padding: 1rem; /* Added padding for better hover effect */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.faq-item h3 {
+    margin: 0;
+    color: #333;
+}
+
+.faq-item p {
+    margin: 0.5rem 0 0 0;
+    color: #555;
+}
+
+.faq-item:hover {
+    background-color: #f4f4f9; /* Change background color on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    z-index: 1000;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Hamburger menu styles... */
+
+/* Media query for mobile... */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes grow {
+    from { width: 0; }
+    to { width: 60px; }
+}
